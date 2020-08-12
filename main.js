@@ -13,14 +13,13 @@ let j = 0;
 
 while (j <= 10) {
   document.write('<span class="cell header">' + j + "</span>");
-  j++;
 
   let k = 0;
   while (k <= 10) {
     document.write('<span class="cell">' + k * j + "</span>");
     k++;
   }
-
+  j++;
   document.write("<br>");
 }
 
