@@ -2,7 +2,9 @@
   display: inline-block;
   width: 30px;
   height: 30px;
-  text-align: right;
+  text-align: center;
+  border-style: solid;
+  border-width: 1px;
 }
 .header {
   background: lightblue;
