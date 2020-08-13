@@ -1,8 +1,12 @@
 // output the header row
 document.write('<span class="cell header">&times;</span>');
 let i = 0;
+// let tableDimensions = document.getElementById("dimensions").value;
+let tableDimensions = prompt(
+  "Input table dimensions for multiplication table."
+);
 
-while (i <= 10) {
+while (i <= tableDimensions) {
   document.write('<span class="cell header">' + i + "</span>");
   i++;
 }
@@ -11,11 +15,11 @@ document.write("<br>");
 
 let j = 0;
 
-while (j <= 10) {
+while (j <= tableDimensions) {
   document.write('<span class="cell header">' + j + "</span>");
 
   let k = 0;
-  while (k <= 10) {
+  while (k <= tableDimensions) {
     document.write('<span class="cell">' + k * j + "</span>");
     k++;
   }
