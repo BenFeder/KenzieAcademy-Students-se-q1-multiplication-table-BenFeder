@@ -1,7 +1,15 @@
 // output the header row
-document.write('<span class="cell header">&times;</span>');
+let headerColor = prompt(
+  "Input what color you would like for the multiplication header background."
+);
+
+document.write(
+  '<span class="cell header" style="background-color:' +
+    headerColor +
+    '">&times;</span>'
+);
 let i = 0;
-// let tableDimensions = document.getElementById("dimensions").value;
+
 let tableDimensions = prompt(
   "Input table dimensions for multiplication table."
 );
